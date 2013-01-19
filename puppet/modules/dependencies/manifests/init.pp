@@ -11,4 +11,8 @@ class dependencies {
 		name => 'libev-dev',
 		ensure => installed
 	}
+	package {'ZeroMQ':
+		name => 'libzmq-dev',
+		ensure => installed
+	}
 }
