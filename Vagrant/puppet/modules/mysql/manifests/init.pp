@@ -1,18 +1,12 @@
 class mysql {
-  $packageName = $::osfamily ? {
-    debian  => 'mysql',
-    redhat  => 'MySQL',
-    default => undef
-  }
-
   # Installs the MySQL server and MySQL client
   package { "mysql-server":
-    name   => "${packageName}-server",
+    name   => "mysql-server",
     ensure => installed,
   }
 
   package { 'mysql-client':
-    name   => "${packageName}-client",
+    name   => "mysql-client",
     ensure => installed,
   }
 
