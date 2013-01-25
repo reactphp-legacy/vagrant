@@ -1,0 +1,32 @@
+{
+    "name": "jcook/react_vagrant",
+    "description": "Vagrant development setup for projects using ReactPHP components.",
+    "require": {
+        "react/react": "0.2.*",
+        "react/stream": "0.2.*",
+        "react/socket": "0.2.*",
+        "react/promise": "1.0.*",
+        "react/http": "0.2.*",
+        "react/zmq": "0.1.*",
+        "react/curry": "1.*",
+        "react/dns": "0.2.*",
+        "react/cache": "0.2.*",
+        "react/event-loop": "0.2.*",
+        "react/http-client": "0.2.*",
+        "react/async": "dev-master",
+        "react/whois": "0.1.*",
+        "react/stomp": "0.1.*",
+        "react/restify": "dev-master",
+        "react/gifsocket": "dev-master",
+        "react/chatroulette": "dev-master",
+        "react/mongrel2": "0.1.*",
+        "monolog/monolog": "1.2.*"
+    },
+    "authors": [
+        {
+            "name": "Jeremy Cook",
+            "email": "jeremycook0@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
