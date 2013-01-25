@@ -1,15 +1,15 @@
 class dependencies {
-	package {'git':
+	package {'git-core':
 		name   => 'git-core',
 		ensure => installed,
 		before => Class['php_modules']
 	}
-	package {'libevent':
+	package {'libevent-dev':
 		name   => 'libevent-dev',
 		ensure => installed,
 		before => Class['php_modules']
 	}
-	package {'libev':
+	package {'libev-dev':
 		name   => 'libev-dev',
 		ensure => installed,
 		before => Class['php_modules']
@@ -19,7 +19,7 @@ class dependencies {
 		ensure => installed,
 		before => Class['php_modules']
 	}
-	package {'ZeroMQ':
+	package {'libzmq-dev':
 		name   => 'libzmq-dev',
 		ensure => installed,
 		before => Class['php_modules']
