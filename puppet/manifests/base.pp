@@ -1,4 +1,4 @@
-Exec { path => '/usr/bin:/bin:/usr/sbin:/sbin' }
+Exec { path => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin' }
 exec { "apt-update":
     command => "/usr/bin/apt-get update"
 }

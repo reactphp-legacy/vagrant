@@ -1,0 +1,887 @@
+{
+    "hash": "1caec3783286bf7b37ec1c1ce7d800b8",
+    "packages": [
+        {
+            "name": "evenement/evenement",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igorw/evenement",
+                "reference": "8b0918f8374327dfed4408fe467980ab41d556dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/igorw/evenement/archive/8b0918f8374327dfed4408fe467980ab41d556dd.zip",
+                "reference": "8b0918f8374327dfed4408fe467980ab41d556dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2012-12-29 17:04:52",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Evenement": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch",
+                    "homepage": "http://wiedler.ch/igor/"
+                }
+            ],
+            "description": "Événement is a very simple event dispatching library for PHP 5.3",
+            "keywords": [
+                "event-dispatcher"
+            ]
+        },
+        {
+            "name": "guzzle/common",
+            "version": "dev-master",
+            "target-dir": "Guzzle/Common",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/guzzle/common.git",
+                "reference": "v3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/guzzle/common/archive/v3.1.1.zip",
+                "reference": "v3.1.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/event-dispatcher": ">=2.1"
+            },
+            "time": "2013-01-21 05:46:09",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Common": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Common libraries used by Guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "event",
+                "exception",
+                "common",
+                "collection"
+            ]
+        },
+        {
+            "name": "guzzle/http",
+            "version": "dev-master",
+            "target-dir": "Guzzle/Http",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/guzzle/http.git",
+                "reference": "v3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/guzzle/http/archive/v3.1.1.zip",
+                "reference": "v3.1.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "guzzle/common": "self.version",
+                "guzzle/parser": "self.version",
+                "guzzle/stream": "self.version"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "time": "2013-01-17 05:47:45",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Http": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "HTTP libraries used by Guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "curl",
+                "http",
+                "http client",
+                "client",
+                "Guzzle"
+            ]
+        },
+        {
+            "name": "guzzle/parser",
+            "version": "dev-master",
+            "target-dir": "Guzzle/Parser",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/guzzle/parser.git",
+                "reference": "v3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/guzzle/parser/archive/v3.1.1.zip",
+                "reference": "v3.1.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "time": "2013-01-12 21:43:21",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Parser": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Interchangeable parsers used by Guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "http",
+                "url",
+                "message",
+                "cookie",
+                "URI Template"
+            ]
+        },
+        {
+            "name": "guzzle/stream",
+            "version": "dev-master",
+            "target-dir": "Guzzle/Stream",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/stream",
+                "reference": "v3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/guzzle/stream/archive/v3.1.1.zip",
+                "reference": "v3.1.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "guzzle/common": "self.version"
+            },
+            "time": "2012-12-07 16:45:11",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle\\Stream": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle stream wrapper component",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "stream",
+                "Guzzle",
+                "component"
+            ]
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog",
+                "reference": "1.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/Seldaek/monolog/zipball/1.2.1",
+                "reference": "1.2.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mlehner/gelf-php": "1.0.*"
+            },
+            "suggest": {
+                "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server"
+            },
+            "time": "2012-08-29 04:53:20",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Monolog": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Logging for PHP 5.3",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging"
+            ]
+        },
+        {
+            "name": "react/async",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/async",
+                "reference": "591515104f1ee41afb7e33926c11659df95b5924"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/async/archive/591515104f1ee41afb7e33926c11659df95b5924.zip",
+                "reference": "591515104f1ee41afb7e33926c11659df95b5924",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "react/event-loop": "dev-master"
+            },
+            "time": "2012-12-29 17:01:17",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "React\\Async": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Async utilities for React.",
+            "keywords": [
+                "async"
+            ]
+        },
+        {
+            "name": "react/chatroulette",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/chatroulette",
+                "reference": "98b1ab25fe9463fcd1135defd232fc17f4917163"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/chatroulette/archive/98b1ab25fe9463fcd1135defd232fc17f4917163.zip",
+                "reference": "98b1ab25fe9463fcd1135defd232fc17f4917163",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "react/socket": "0.2.*",
+                "monolog/monolog": "1.2.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "time": "2013-01-08 03:49:33",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "React\\Chatroulette": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Chatroulette sample application.",
+            "keywords": [
+                "chatroulette"
+            ]
+        },
+        {
+            "name": "react/curry",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/curry",
+                "reference": "eb09d5f82b76b6cfb79e75c64edccc73a9f367d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/curry/archive/eb09d5f82b76b6cfb79e75c64edccc73a9f367d6.zip",
+                "reference": "eb09d5f82b76b6cfb79e75c64edccc73a9f367d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "time": "2013-01-22 18:51:34",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "React\\Curry": "src"
+                },
+                "files": [
+                    "src/React/Curry/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Partial function application.",
+            "keywords": [
+                "curry",
+                "currying",
+                "functional-programming"
+            ]
+        },
+        {
+            "name": "react/gifsocket",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/gifsocket",
+                "reference": "e8597f4a17c4a72bf5d3ee56db82ca7ca8a4174a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/gifsocket/archive/e8597f4a17c4a72bf5d3ee56db82ca7ca8a4174a.zip",
+                "reference": "e8597f4a17c4a72bf5d3ee56db82ca7ca8a4174a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "ext-gd": "*",
+                "react/curry": "dev-master",
+                "react/http": "0.2.*"
+            },
+            "time": "2013-01-05 02:22:01",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "React\\Gifsocket": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Real Time communication library using Animated Gifs as a transport™.",
+            "keywords": [
+                "gifsocket",
+                "gifsockets"
+            ]
+        },
+        {
+            "name": "react/mongrel2",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evan108108/React-Mongrel2",
+                "reference": "v0.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/evan108108/React-Mongrel2/archive/v0.1.1.zip",
+                "reference": "v0.1.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "ext-zmq": "*",
+                "evenement/evenement": "1.0.*",
+                "react/event-loop": "0.2.*",
+                "react/zmq": "0.1.*",
+                "winks/m2php": "dev-master"
+            },
+            "require-dev": {
+                "ext-pcntl": "*"
+            },
+            "time": "2012-12-21 20:46:54",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "React\\Mongrel2": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Mongrel2 bindings for React.",
+            "keywords": [
+                "mongrel2",
+                "mongrel"
+            ]
+        },
+        {
+            "name": "react/promise",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise",
+                "reference": "fea160d4771d1c6d5cf55c7d49a69793617bd14d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/promise/archive/fea160d4771d1c6d5cf55c7d49a69793617bd14d.zip",
+                "reference": "fea160d4771d1c6d5cf55c7d49a69793617bd14d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "time": "2013-01-21 20:56:57",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "React\\Promise": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@googlemail.com",
+                    "homepage": "http://sorgalla.com",
+                    "role": "maintainer"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP"
+        },
+        {
+            "name": "react/react",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/react",
+                "reference": "766105d2a6d8303e6f5d33b5ef1830b25d870f8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/react/archive/766105d2a6d8303e6f5d33b5ef1830b25d870f8e.zip",
+                "reference": "766105d2a6d8303e6f5d33b5ef1830b25d870f8e",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "1.0.*",
+                "php": ">=5.3.3",
+                "guzzle/http": "3.0.*",
+                "guzzle/parser": "3.0.*",
+                "react/promise": ">=1.0,<2.0"
+            },
+            "replace": {
+                "react/event-loop": "self.version",
+                "react/socket": "self.version",
+                "react/http": "self.version",
+                "react/stream": "self.version",
+                "react/dns": "self.version",
+                "react/http-client": "self.version",
+                "react/cache": "self.version"
+            },
+            "require-dev": {
+                "ext-libevent": "*",
+                "ext-libev": "*"
+            },
+            "time": "2013-01-20 19:03:07",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "React": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Nuclear Reactor written in PHP.",
+            "keywords": [
+                "event-loop",
+                "reactor"
+            ]
+        },
+        {
+            "name": "react/restify",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CapMousse/React-Restify",
+                "reference": "41bea9a4ea8b3a240ad3f6e843d888a0b35cbb9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/CapMousse/React-Restify/archive/41bea9a4ea8b3a240ad3f6e843d888a0b35cbb9c.zip",
+                "reference": "41bea9a4ea8b3a240ad3f6e843d888a0b35cbb9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "react/http": "0.2.*"
+            },
+            "time": "2012-10-15 12:23:02",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "React\\Restify": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jérémy Barbe",
+                    "email": "contact@jeremybarbe.fr",
+                    "homepage": "http://www.shwaark.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "Create RESTful API with ReactPHP",
+            "keywords": [
+                "rest",
+                "react",
+                "restify"
+            ]
+        },
+        {
+            "name": "react/stomp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/stomp",
+                "reference": "2cadfffb5104fc9f95d729d742722979a4dd2bd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/stomp/archive/2cadfffb5104fc9f95d729d742722979a4dd2bd2.zip",
+                "reference": "2cadfffb5104fc9f95d729d742722979a4dd2bd2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "evenement/evenement": "1.0.*",
+                "react/socket": "0.2.*",
+                "react/promise": ">=1.0,<2.0"
+            },
+            "time": "2013-01-20 19:07:50",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "React\\Stomp": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "STOMP bindings for React.",
+            "keywords": [
+                "rabbitmq",
+                "stomp"
+            ]
+        },
+        {
+            "name": "react/whois",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/whois",
+                "reference": "49d0dca75991b1bdb430e12d978735e6bc568db1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/whois/archive/49d0dca75991b1bdb430e12d978735e6bc568db1.zip",
+                "reference": "49d0dca75991b1bdb430e12d978735e6bc568db1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "react/dns": "0.2.*",
+                "react/socket": "0.2.*",
+                "react/curry": "1.0.*",
+                "react/stream": "0.2.*",
+                "react/promise": ">=1.0,<2.0"
+            },
+            "time": "2013-01-20 19:05:49",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "React\\Whois": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Whois client based on React.",
+            "keywords": [
+                "whois"
+            ]
+        },
+        {
+            "name": "react/zmq",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/zmq",
+                "reference": "a1539efe64084204103626ec15bbc875e293ee41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/reactphp/zmq/archive/a1539efe64084204103626ec15bbc875e293ee41.zip",
+                "reference": "a1539efe64084204103626ec15bbc875e293ee41",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "evenement/evenement": "1.0.*",
+                "ext-zmq": "*",
+                "react/event-loop": "0.2.*"
+            },
+            "require-dev": {
+                "ext-pcntl": "*"
+            },
+            "time": "2012-12-29 19:35:54",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "React\\ZMQ": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "ZeroMQ bindings for React.",
+            "keywords": [
+                "zeromq",
+                "zmq"
+            ]
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/EventDispatcher",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/EventDispatcher",
+                "reference": "v2.2.0-BETA2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/symfony/EventDispatcher/archive/v2.2.0-BETA2.zip",
+                "reference": "v2.2.0-BETA2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/dependency-injection": "2.2.*"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "2.2.*",
+                "symfony/http-kernel": "2.2.*"
+            },
+            "time": "2013-01-17 15:25:59",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "http://symfony.com"
+        },
+        {
+            "name": "winks/m2php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/winks/m2php",
+                "reference": "3e0cffd497d384d34635d497e167a333f8dc0962"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/winks/m2php/archive/3e0cffd497d384d34635d497e167a333f8dc0962.zip",
+                "reference": "3e0cffd497d384d34635d497e167a333f8dc0962",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "ext-zmq": "*"
+            },
+            "time": "2012-11-02 15:51:24",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mongrel2": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch",
+                    "homepage": "http://wiedler.ch/igor/"
+                },
+                {
+                    "name": "Florian Anderiasch",
+                    "email": "fa@art-core.or"
+                }
+            ],
+            "description": "PHP bindings for mongrel2",
+            "keywords": [
+                "mongrel2",
+                "zeromq",
+                "mongrel"
+            ]
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "react/async": 20,
+        "react/restify": 20,
+        "react/gifsocket": 20,
+        "react/chatroulette": 20
+    }
+}
