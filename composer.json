@@ -16,10 +16,8 @@
         "react/async": "dev-master",
         "react/whois": "0.1.*",
         "react/stomp": "0.1.*",
-        "react/restify": "dev-master",
         "react/gifsocket": "dev-master",
         "react/chatroulette": "dev-master",
-        "react/mongrel2": "0.1.*",
         "monolog/monolog": "1.2.*"
     },
     "authors": [
