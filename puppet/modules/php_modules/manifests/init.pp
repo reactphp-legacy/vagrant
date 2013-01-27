@@ -30,10 +30,21 @@ class php_modules {
 	}
 	file {'/etc/php5/conf.d/libevent.ini':
 		path    => '/etc/php5/conf.d/libevent.ini',
-		content => 'extension=libevent.so',
+		content => 'extension=libevent.so'
 	}
 	file {'/etc/php5/conf.d/zmq.ini':
 		path    => '/etc/php5/conf.d/zmq.ini',
-		content => 'extension=zmq.so',
+		content => 'extension=zmq.so'
+	}
+    exec { 'git clone --recursive https://github.com/m4rw3r/php-libev && cd php-libev && phpize && ./configure && make && make install':
+		cwd     => '/tmp',
+		require => [Package['git-core'], Package['php-devel'], Package['libev-dev']],
+		alias   => 'git-libev'
+	}
+	file {'/etc/php5/conf.d/libev.ini':
+		path    => '/etc/php5/conf.d/libev.ini',
+		content => 'extension=libev.so',
+		require => [Exec['git-libev'], Package['apache2']],
+		notify  => Service['apache2']
 	}
 }
