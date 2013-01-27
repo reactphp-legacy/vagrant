@@ -15,9 +15,7 @@ class php_modules {
 	php::pecl::module { "xdebug": }
 	php::pecl::module { "libevent": 
 		use_package     => "no",
-		preferred_state => "beta",
-		notify          => Service['apache2'],
-		require         => [Package['apache2'], File['/etc/php5/conf.d/libevent.ini']]
+		preferred_state => "beta"
 	}
 	php::pear::config { auto_discover:
 		value => 1
@@ -25,21 +23,24 @@ class php_modules {
 	php::pecl::module { 'pear.zero.mq/zmq-beta':
 		use_package     => "no",
 		preferred_state => "beta",
-		notify          => Service['apache2'],
-		require         => [Package['apache2'], File['/etc/php5/conf.d/zmq.ini']]
-	}
-	file {'/etc/php5/conf.d/libevent.ini':
-		path    => '/etc/php5/conf.d/libevent.ini',
-		content => 'extension=libevent.so'
-	}
-	file {'/etc/php5/conf.d/zmq.ini':
-		path    => '/etc/php5/conf.d/zmq.ini',
-		content => 'extension=zmq.so'
+		require         => Exec['pear-config-set-auto_discover']
 	}
     exec { 'git clone --recursive https://github.com/m4rw3r/php-libev && cd php-libev && phpize && ./configure && make && make install':
 		cwd     => '/tmp',
 		require => [Package['git-core'], Package['php-devel'], Package['libev-dev']],
 		alias   => 'git-libev'
+	}
+	file {'/etc/php5/conf.d/libevent.ini':
+		path    => '/etc/php5/conf.d/libevent.ini',
+		content => 'extension=libevent.so',
+		require => Exec['pecl-libevent'], 
+		notify  => Service['apache2'],
+	}
+	file {'/etc/php5/conf.d/zmq.ini':
+		path    => '/etc/php5/conf.d/zmq.ini',
+		content => 'extension=zmq.so',
+		require => Exec['pecl-pear.zero.mq/zmq-beta'], 
+		notify  => Service['apache2'],
 	}
 	file {'/etc/php5/conf.d/libev.ini':
 		path    => '/etc/php5/conf.d/libev.ini',
