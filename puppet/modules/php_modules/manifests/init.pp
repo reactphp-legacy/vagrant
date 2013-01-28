@@ -25,7 +25,7 @@ class php_modules {
 		preferred_state => "beta",
 		require         => Exec['pear-config-set-auto_discover']
 	}
-    exec { 'git clone --recursive https://github.com/m4rw3r/php-libev && cd php-libev && phpize && ./configure && make && make install':
+    exec { 'git clone --recursive https://github.com/m4rw3r/php-libev && cd php-libev && phpize && ./configure --with-libev && make && make install':
 		cwd     => '/tmp',
 		require => [Package['git-core'], Package['php-devel'], Package['libev-dev']],
 		alias   => 'git-libev'

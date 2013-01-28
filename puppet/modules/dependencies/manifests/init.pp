@@ -24,4 +24,9 @@ class dependencies {
 		ensure => installed,
 		before => Class['php_modules']
 	}
+	package {'build-essential':
+		name   => 'build-essential',
+		ensure => installed,
+		before => Class['php_modules']
+	}	
 }
