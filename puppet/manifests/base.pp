@@ -12,7 +12,8 @@ class { 'composer':
 }
 exec { 'composer install':
 	cwd     => '/vagrant',
-	require => Class['composer']
+	require => Class['composer'],
+	onlyif  => 'test -f /project_data/composer.json'
 }
 
 include repository
