@@ -1,3 +1,4 @@
+# PHP modules installed on the VM.
 class php_modules {
 	php::module { "apc":
 		module_prefix => "php-"
@@ -25,11 +26,17 @@ class php_modules {
 		preferred_state => "beta",
 		require         => Exec['pear-config-set-auto_discover']
 	}
+	php::pear::module { "pear.phpunit.de/PHPUnit":
+		use_package => false,
+		alldeps     => true,
+		require     => Exec['pear-config-set-auto_discover']
+	}
     exec { 'git clone --recursive https://github.com/m4rw3r/php-libev && cd php-libev && phpize && ./configure --with-libev && make && make install':
 		cwd     => '/tmp',
 		require => [Package['git-core'], Package['php-devel'], Package['libev-dev']],
 		alias   => 'git-libev'
 	}
+	# Config files for custom compiled PECL modules
 	file {'/etc/php5/conf.d/libevent.ini':
 		path    => '/etc/php5/conf.d/libevent.ini',
 		content => 'extension=libevent.so',

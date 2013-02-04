@@ -1,3 +1,4 @@
+# Installs dependencies needed by various PHP modules.
 class dependencies {
 	package {'git-core':
 		name   => 'git-core',
