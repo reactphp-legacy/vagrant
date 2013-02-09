@@ -30,4 +30,7 @@ class dependencies {
 		ensure => installed,
 		before => Class['php_modules']
 	}	
+	package {"python-software-properties":
+		ensure => installed
+	}
 }

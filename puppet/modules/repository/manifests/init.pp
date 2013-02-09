@@ -5,7 +5,4 @@ class repository {
       require => Package["python-software-properties"],
       before  => Package['php']
   }
-  package {"python-software-properties":
-      ensure => installed
-  }
 }
