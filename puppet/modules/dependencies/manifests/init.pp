@@ -33,4 +33,8 @@ class dependencies {
 	package {"python-software-properties":
 		ensure => installed
 	}
+	package {"curl":
+		ensure => installed,
+		before => Class['php_modules']
+	}
 }

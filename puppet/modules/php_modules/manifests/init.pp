@@ -1,4 +1,3 @@
-# PHP modules installed on the VM.
 class php_modules {
 	php::module { "apc":
 		module_prefix => "php-"
@@ -13,6 +12,7 @@ class php_modules {
 	php::module { "sqlite": }
 	php::module { "xmlrpc": }
 	php::module { "xsl": }
+	php::module { "curl": }
 	php::pecl::module { "xdebug": }
 	php::pecl::module { "libevent": 
 		use_package     => "no",

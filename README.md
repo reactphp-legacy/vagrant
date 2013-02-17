@@ -23,6 +23,7 @@ The following dependencies are installed using apt-get as they are required to i
 - pkg-config
 - build-essential
 - python-software-properties
+- cURL
 
 ### Apache
 
@@ -49,6 +50,7 @@ PHP 5.4 is installed using a custom PPA for Ubuntu. The following modules and ex
 - sqlite 
 - xmlrpc 
 - xsl 
+- curl
 
 #### PECL Modules
 
