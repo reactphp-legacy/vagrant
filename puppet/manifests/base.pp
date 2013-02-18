@@ -1,7 +1,7 @@
 # Set paths to use in exec commands
 Exec { path => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin' }
 exec { "apt-update":
-    command => "/usr/bin/apt-get update"
+    command => "apt-get update"
 }
 
 Exec["apt-update"] -> Package <| |>	
