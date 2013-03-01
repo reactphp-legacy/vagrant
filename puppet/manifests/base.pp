@@ -13,7 +13,7 @@ class { 'composer':
 	require      => Class['php_modules']
 }
 # Install composer dependencies only if a composer.json file is present.
-exec { 'composer install':
+exec { 'composer install --dev':
 	cwd     => '/project_data',
 	require => Class['composer'],
 	onlyif  => 'test -f /project_data/composer.json'
