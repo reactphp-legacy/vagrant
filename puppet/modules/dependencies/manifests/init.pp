@@ -29,11 +29,15 @@ class dependencies {
 		name   => 'build-essential',
 		ensure => installed,
 		before => Class['php_modules']
-	}	
+	}
 	package {"python-software-properties":
 		ensure => installed
 	}
 	package {"curl":
+		ensure => installed,
+		before => Class['php_modules']
+	}
+	package {"vim":
 		ensure => installed,
 		before => Class['php_modules']
 	}
