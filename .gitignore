@@ -14,3 +14,8 @@ app/config/parameters.yml
 
 # Vagrant files
 Vagrant/.vagrant
+.librarian/
+.tmp/
+puppet/modules/composer/
+puppet/modules/php/
+puppet/modules/puppi/
