@@ -1,0 +1,32 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    example42/puppi (2.0.8)
+
+GIT
+  remote: git://github.com/example42/puppet-php.git
+  ref: 2023c5f9865f2efb4a9ad582bd25ec4946ffd71e
+  sha: 2023c5f9865f2efb4a9ad582bd25ec4946ffd71e
+  specs:
+    php (2.0.8)
+      example42/puppi (>= 2.0.0)
+
+GIT
+  remote: git://github.com/example42/puppi.git
+  ref: 0eae2847e54aed03e533ec5eccd9ce25d82739e2
+  sha: 0eae2847e54aed03e533ec5eccd9ce25d82739e2
+  specs:
+    puppi (2.0.8)
+
+GIT
+  remote: git://github.com/willdurand/puppet-composer.git
+  ref: 0.0.2
+  sha: 7f7935a0325b2bf7e7fe8a0e804f53be9c874843
+  specs:
+    composer (0.0.1)
+
+DEPENDENCIES
+  composer (>= 0)
+  php (>= 0)
+  puppi (>= 0)
+

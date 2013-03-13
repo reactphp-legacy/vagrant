@@ -14,3 +14,6 @@ app/config/parameters.yml
 
 # Vagrant files
 Vagrant/.vagrant
+.librarian/
+.tmp/
+modules/

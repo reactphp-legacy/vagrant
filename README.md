@@ -4,7 +4,11 @@ This project provides a Vagrant configuration for developing with or for [ReactP
 
 ## Install
 
-Simply clone this project into a directory one level below the root of your project. For example, if your project is located at ~/foo this project should be cloned into ~/foo/Vagrant. This project uses submodules so you'll need to use the --recursive option when you clone it or init the submodules afterwards. Cd into the directory for the project (~/foo/Vagrant) and run 'vagrant up'. You will need to separately install Vagrant and VirtualBox.
+Before you get started, please make sure that you've installed [Vagrant](http://www.vagrantup.com) and [VirtualBox](https://www.virtualbox.org/). You also need
+to install the required Puppet modules through [librarian-puppet](https://github.com/rodjek/librarian-puppet). This can easily be done through running `gem install librarian-puppet`.
+
+Simply clone this project into a directory one level below the root of your project. For example, if your project is located at ~/foo this project should be cloned into ~/foo/Vagrant.
+Then cd into the directory for the project (~/foo/Vagrant) and run `librarian-puppet install`.
 
 The vagrant configuration will mount two directories in the VM. The directory where the Vagrantfile is located (~/foo/Vagrant in our example) will be mounted at /Vagrant in the vm. The root directory of the project (~/foo in the example) will be mounted at /project\_data. If a composer.json file is present in the root directory of the project the final part of running 'vagrant up' will run 'composer install' in that directory.
 
