@@ -16,6 +16,6 @@ app/config/parameters.yml
 Vagrant/.vagrant
 .librarian/
 .tmp/
-puppet/modules/composer/
-puppet/modules/php/
-puppet/modules/puppi/
+modules/composer/
+modules/php/
+modules/puppi/
