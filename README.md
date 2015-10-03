@@ -72,7 +72,7 @@ Composer is installed globally to /usr/local/bin in the VM. Puppet then runs 'co
 
 ## Supported Platforms
 
-This Vagrant config has been developed and tested on Ubuntu 12.10. It has also been tested on OSX.
+This Vagrant config has been developed and tested on Ubuntu 12.04. It has also been tested on OSX.
 
 ## TODO
 
